@@ -14,7 +14,7 @@ begin
         for i:=2 to range do
         begin
                 check:= false;
-                for n:=2 to Trunc(Sqr(i)) do
+                for n:=2 to i div 2 do
                 begin
                         check:= i mod n <> 0;
                         if not check then break;
